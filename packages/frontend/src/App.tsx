@@ -453,7 +453,7 @@ function App() {
                 <h6 style={{ color: '#ffffff', boxSizing: 'border-box', marginBottom: '12px', lineHeight: 1.5, fontWeight: 400, fontSize: 14 }}>
                   A pre-sale will be available for our early supporters on Twitter, Discord and Instagram. Details to be confirmed.
                 </h6>
-                <div style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}></div>
+                <div style={{}}></div>
               </div>
             </div>
           </div>
@@ -461,11 +461,11 @@ function App() {
 
       </section>
       <section style={{ backgroundColor: '#000000' }}>
-        <div style={{ margin: 200, display: "flex", justifyContent: "center", alignContent: 'center', paddingLeft: 15, paddingRight: 15 }}>
+        <div style={{ margin: 100, display: "flex", justifyContent: "center", alignContent: 'center', paddingLeft: 50, paddingRight: 50 }}>
           <Col span={8}>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <p style={{ color: "#ffffff", marginBottom: 20, fontSize: 30, fontWeight: 20 }}>Social</p>
-              <p style={{ display: 'flex', justifyContent: 'start', lineHeight: 1.4, gap: '10px' }}>
+              <p style={{ color: "#ffffff", marginBottom: 20, fontSize: 30, fontWeight: 500 }}>Social</p>
+              <p style={{ display: 'flex', justifyContent: 'start', lineHeight: 1.4, gap: '10px', paddingLeft: 15 }}>
                 <a href={INSTAGRAM_LINK} target="_blank" style={{ fontSize: '32px', color: "#ffffff" }}>
                   <InstagramFilled />
                 </a>
@@ -476,14 +476,16 @@ function App() {
             </div>
           </Col>
 
-          <Col span={8} offset={8}>
-            <div style={{ display: "flex", flexDirection: 'column' }}>
-              <div style={{ display: 'flex', flexDirection: 'row', gap: '10px', alignItems: 'center' }}>
-                <img src={bombClubBlack} alt='bombClubBlack' height='30px' />
-                <p style={{ color: "#ffffff", fontSize: 30, fontWeight: 20 }} >BombClub</p>
+          <Col span={8} offset={6}>
+            <div style={{ display: "flex", flexDirection: 'column', alignContent: 'flex-start' }}>
+              <div style={{ display: 'flex', flexDirection: 'row', gap: '10px', justifyContent: 'flex-end', alignContent: "center", alignItems: 'center' }}>
+
+                < img src={bombClubBlack} alt='bombClubBlack' height='40px' />
+
+                <div style={{ color: "#ffffff", fontSize: 30, fontWeight: 20 }} >BombClub</div>
               </div>
               <div style={{ display: "flex", flexDirection: 'row', justifyContent: 'flex-end' }}>
-                <p style={{ color: "#ffffff", fontSize: 30, fontWeight: 20 }} >BombClub</p>
+                <p style={{ color: "#ffffff", fontSize: 10, fontWeight: 20, lineHeight: 1.4 }} >@All right reserved</p>
 
               </div>
 
@@ -493,7 +495,7 @@ function App() {
           </Col>
 
         </div>
-      </section>
+      </section >
 
 
     </Layout >
