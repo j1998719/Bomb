@@ -226,18 +226,16 @@ function App() {
         </div>
       </Header >
 
-      <Content style={{ minHeight: '100vh', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', background: '#000000', flexWrap: "wrap" }}>
+      <Content style={{ minHeight: '100vh', display: 'flex', gap: 32, justifyContent: 'center', alignItems: 'center', background: '#000000', flexWrap: "wrap" }}>
         <div style={{ display: 'flex', flexDirection: "column", maxWidth: "450px" }}>
           <div style={{ position: "relative" }}>
             <h6 className="h6" style={{ color: '#ffffff' }}>SUMMON YOUR FIGHTER SOUL</h6>
           </div>
           <h1 className="h1" style={{ margin: 0, color: '#ffffff' }}>Galosseum</h1>
-          <p className='p' style={{ fontSize: "14px" }}>Galosseum (GSMN) is an art collection of 2,222 randomly generated portraits on the Ethereum Blockchain. Each GSMN is unique and comes with different traits varying in rarity. Public Sale Date is to be announced.</p>
-          <a className='btn' target="_blank" rel="noopener noreferrer" href="https://discord.gg/MrYr57kUzW">
-            <span>Join Discord</span>
-          </a>
+          <p className='p' style={{ fontSize: "14px", maxWidth: '400px' }}>Galosseum (GSMN) is an art collection of 2,222 randomly generated portraits on the Ethereum Blockchain. Each GSMN is unique and comes with different traits varying in rarity. Public Sale Date is to be announced.</p>
+
           <div>
-            <Button size="large" style={{ color: '#ffffff', background: "#000000" }}>Join Discord</Button>
+            <Button size="large" target="_blank" rel="noopener noreferrer" href="https://discord.gg/MrYr57kUzW" style={{ marginTop: '16px', color: '#ffffff', background: "#000000" }}>Join Discord</Button>
           </div>
         </div>
         <div style={{}}>
@@ -245,25 +243,52 @@ function App() {
         </div>
         <div className="lineButtonLeft"></div>
       </Content>
-      <section className='about-ar section-padding'>
-        <div className='container'>
-          <div className="row">
-            <div className='col-lg-6 valign'>
-              <div className='img'>
-                <div className="bg-img bg-fixed hero-bg" style={{ backgroundImage: `url(${GSMN2})`, backgroundSize: "contain", backgroundPositionX: "50px" }}></div>
-                <div className='exp valign text-center'>
-                  <div className='full-width'>
-                    <h2 className='bg-img bg-fixed' style={{ backgroundImage: `url(${GSMN3})`, backgroundSize: "contain", backgroundPositionX: "50px", fontSize: "110px" }}></h2>
-                  </div>
-                </div>
-              </div>
+      <section style={{ display: 'flex', background: '#000000', color: '#ffffff', padding: '0px 120px' }}>
+        <Col span={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <img src={GSMN2} alt='bombClubBlack' height='400px' />
+        </Col>
+        <Col span={12} style={{ display: 'flex', flexDirection: 'column', color: '#a4a7b1', lineHeight: 2 }}>
+          <h1 style={{ color: '#12c2e9', letterSpacing: '10px', marginBottom: '16px' }}> WHAT IS GALOSSEUM?</h1>
+          <b>Gallery x Colosseum.</b>
+          <p>Due to the inequality of market rewards to talented artists and an unhealthy NFT ecosystem, we as a team decided to work with undiscovered talented artists all around the world to chase their NFT dreams.</p>
+          <p>Galosseum is a colosseum floating in a space between dimensions. Every 100 years, Gods gather to watch a new tournament take place where the winner shall be granted excalibur and become the ruler for the next 100 years. Each of the contestants are capable of utilizing a variety of magic and summoning various fighter souls with magic cards.</p>
+          <p>Please join us at the Galosseum, summon your fighter soul and unlock all stories about this secretive community.</p>
+        </Col>
+
+      </section>
+      <div style={{ background: '#000000' }}>
+        <div style={{ background: 'linear-gradient(to right, #12c2e9, #c471ed, #f64f59)', height: '1.5px', width: '65%', margin: '64px 0px' }}>
+
+        </div>
+        <section style={{ display: 'flex', background: '#000000', color: '#ffffff', padding: '0px 120px' }}>
+
+          <Col span={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <img src={GSMN2} alt='bombClubBlack' height='400px' />
+          </Col>
+          <Col span={12} style={{ display: 'flex', flexDirection: 'column', color: '#a4a7b1', lineHeight: 2 }}>
+            <h1 style={{ color: '#12c2e9', letterSpacing: '10px', marginBottom: '16px' }}> WHAT IS GALOSSEUM?</h1>
+            <b>Gallery x Colosseum.</b>
+            <p>Due to the inequality of market rewards to talented artists and an unhealthy NFT ecosystem, we as a team decided to work with undiscovered talented artists all around the world to chase their NFT dreams.</p>
+            <p>Galosseum is a colosseum floating in a space between dimensions. Every 100 years, Gods gather to watch a new tournament take place where the winner shall be granted excalibur and become the ruler for the next 100 years. Each of the contestants are capable of utilizing a variety of magic and summoning various fighter souls with magic cards.</p>
+            <p>Please join us at the Galosseum, summon your fighter soul and unlock all stories about this secretive community.</p>
+          </Col>
+        </section>
+      </div>
+      <div>
+        <div>
+
+        </div>
+        <div>
+          <div>
+            <div>
+              <div></div>
             </div>
-            <div className='col-lg-6 valign'>
-              <img src={bombClubBlack} alt='bombClubBlack' height='400px' />
-            </div>
+            <div></div>
+            <div></div>
           </div>
         </div>
-      </section>
+      </div>
+
     </Layout >
   );
 }
