@@ -20,10 +20,10 @@ const styles = {
     button: {
         display: "flex",
         alignItems: "center",
-        height: "42px",
+        height: "36px",
         fontWeight: "500",
         fontFamily: "Roboto, sans-serif",
-        fontSize: "14px",
+        fontSize: "12px",
         padding: "0 16px",
         borderRadius: "16px",
         background: '#000000',
